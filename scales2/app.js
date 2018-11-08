@@ -31,22 +31,14 @@ var Apple = /** @class */ (function () {
     Apple.prototype.getName = function () {
         return this._name;
     };
-    Object.defineProperty(Apple.prototype, "scale", {
-        set: function (scale) {
-            if (scale > 0) {
-                this._scale = scale;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Apple.prototype, "name", {
-        set: function (name) {
-            this._name = name;
-        },
-        enumerable: true,
-        configurable: true
-    });
+    Apple.prototype.setScale = function (scale) {
+        if (scale > 0) {
+            this._scale = scale;
+        }
+    };
+    Apple.prototype.setName = function (name) {
+        this._name = name;
+    };
     return Apple;
 }());
 var Tomato = /** @class */ (function () {
@@ -59,39 +51,31 @@ var Tomato = /** @class */ (function () {
     Tomato.prototype.getName = function () {
         return this._name;
     };
-    Object.defineProperty(Tomato.prototype, "scale", {
-        set: function (scale) {
-            if (scale > 0) {
-                this._scale = scale;
-            }
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(Tomato.prototype, "name", {
-        set: function (name) {
-            this._name = name;
-        },
-        enumerable: true,
-        configurable: true
-    });
+    Tomato.prototype.setScale = function (scale) {
+        if (scale > 0) {
+            this._scale = scale;
+        }
+    };
+    Tomato.prototype.setName = function (name) {
+        this._name = name;
+    };
     return Tomato;
 }());
 var Apple1 = new Apple();
 var Apple2 = new Apple();
 var Apple3 = new Apple();
-Apple1.scale = 5;
-Apple1.name = 'Apple1';
-Apple2.scale = 7;
-Apple2.name = 'Apple2';
-Apple3.scale = 10;
-Apple3.name = 'Apple3';
+Apple1.setScale(5);
+Apple1.setName('Apple1');
+Apple2.setScale(7);
+Apple2.setName('Apple2');
+Apple3.setScale(10);
+Apple3.setName('Apple3');
 var Tomato1 = new Tomato();
 var Tomato2 = new Tomato();
-Tomato1.scale = 2;
-Tomato1.name = 'Tomato1';
-Tomato2.scale = 4;
-Tomato2.name = 'Tomato2';
+Tomato1.setScale(2);
+Tomato1.setName('Tomato1');
+Tomato2.setScale(4);
+Tomato2.setName('Tomato2');
 var Scale1 = new Scale();
 Scale1.add(Apple1);
 Scale1.add(Apple2);

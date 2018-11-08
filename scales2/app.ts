@@ -50,13 +50,13 @@ class Apple implements IScalable{
         return this._name;
     }
 
-    set scale(scale:number) {
+    setScale(scale:number) {
         if(scale>0) {
             this._scale = scale;
         }
     }
 
-    set name(name:string) {
+    setName(name:string) {
             this._name = name;
     }
 
@@ -75,13 +75,13 @@ class Tomato implements IScalable {
         return this._name;
     }
 
-    set scale(scale:number) {
+    setScale(scale:number) {
         if(scale>0) {
             this._scale = scale;
         }
     }
 
-    set name(name:string) {
+    setName(name:string) {
         this._name = name;
     }
 
@@ -91,24 +91,24 @@ class Tomato implements IScalable {
     let Apple2: Apple = new Apple();
     let Apple3: Apple = new Apple();
 
-    Apple1.scale = 5;
-    Apple1.name = 'Apple1';
+    Apple1.setScale(5);
+    Apple1.setName('Apple1');
 
-    Apple2.scale = 7;
-    Apple2.name = 'Apple2';
+    Apple2.setScale(7);
+    Apple2.setName('Apple2');
 
-    Apple3.scale = 10;
-    Apple3.name = 'Apple3';
+    Apple3.setScale(10);
+    Apple3.setName('Apple3');
 
     let Tomato1: Tomato = new Tomato();
     let Tomato2: Tomato = new Tomato();
 
 
-    Tomato1.scale = 2;
-    Tomato1.name = 'Tomato1';
+    Tomato1.setScale(2);
+    Tomato1.setName('Tomato1');
 
-    Tomato2.scale = 4;
-    Tomato2.name = 'Tomato2';
+    Tomato2.setScale(4);
+    Tomato2.setName('Tomato2');
 
 let Scale1:Scale = new Scale();
 
